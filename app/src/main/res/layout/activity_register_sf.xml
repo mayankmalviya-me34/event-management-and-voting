@@ -7,7 +7,7 @@
     tools:context=".loginandregister.RegisterActivitySF">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageViewAcro"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="15dp"

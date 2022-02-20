@@ -16,7 +16,7 @@ public class StudentLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityStudentLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportActionBar().hide();
+
         binding.backToRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

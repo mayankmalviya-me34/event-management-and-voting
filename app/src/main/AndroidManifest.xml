@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MinorProject">
         <activity
+            android:name=".loginandregister.OnTapNotoficationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomePageFacultyAndStudent.HomePageActivityForFaculty"
+            android:exported="false" />
+        <activity
             android:name=".HomePageFacultyAndStudent.HomePageActivityForStudent"
             android:exported="false" />
         <activity
@@ -20,6 +26,9 @@
             android:exported="false" />
         <activity
             android:name=".loginandregister.RegisterActivitySF"
+            android:exported="true"></activity>
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,9 +36,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"

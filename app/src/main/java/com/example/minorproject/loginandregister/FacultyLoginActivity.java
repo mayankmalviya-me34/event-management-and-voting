@@ -16,7 +16,7 @@ public class FacultyLoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityFacultyLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        getSupportActionBar().hide();
+
         binding.backToRegister2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
