@@ -74,7 +74,7 @@
                  />
 
             <EditText
-                android:id="@+id/editTextTextEmailAddressLoginStd"
+                android:id="@+id/StdEmailLogin"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_margin="7dp"
@@ -84,7 +84,7 @@
                 android:textSize="20dp" />
 
             <EditText
-                android:id="@+id/editTextTextPasswordLoginStd"
+                android:id="@+id/StdPasswordLogin"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_margin="7dp"
@@ -104,6 +104,7 @@
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/StdLoginAR"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

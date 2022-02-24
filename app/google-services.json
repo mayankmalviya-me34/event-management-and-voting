@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "680546779068",
+    "project_id": "college-event-management-78448",
+    "storage_bucket": "college-event-management-78448.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680546779068:android:186696830796be680035b9",
+        "android_client_info": {
+          "package_name": "com.example.minorproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680546779068-flcgisivqmkomt3sfg1clbucl5tlo4iv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJlX81HLk23SY4FF4uC8v9vvPQJfkzx7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680546779068-flcgisivqmkomt3sfg1clbucl5tlo4iv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

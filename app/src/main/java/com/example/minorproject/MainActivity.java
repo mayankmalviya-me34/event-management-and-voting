@@ -3,8 +3,7 @@ package com.example.minorproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.net.Uri;
-import android.os.Binder;
+
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -22,9 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-//        Uri uri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.anthem);
-//        binding.VideoView.setVideoURI(uri);
-//        binding.VideoView.start();
+
 
         animationt = AnimationUtils.loadAnimation(this,R.anim.top_anim);
         animationb = AnimationUtils.loadAnimation(this,R.anim.bottom_anim);
@@ -41,15 +38,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-//    @Override
-//    protected void onStop() {
-//        super.onStop();
-//        binding.VideoView.pause();
-//    }
-//
-//    @Override
-//    protected void onPostResume() {
-//        super.onPostResume();
-//        binding.VideoView.resume();
-//    }
 }

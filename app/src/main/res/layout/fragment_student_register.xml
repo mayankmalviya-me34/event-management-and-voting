@@ -14,7 +14,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/StdUserName"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_margin="7dp"
@@ -24,7 +24,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/StdEnrollmentNumber"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_margin="7dp"
@@ -34,7 +34,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/StdEmail"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_margin="7dp"
@@ -44,7 +44,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/StdPassword"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_margin="7dp"

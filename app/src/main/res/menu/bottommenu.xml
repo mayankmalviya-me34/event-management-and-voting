@@ -8,8 +8,8 @@
         app:showAsAction="always"
         />
     <item android:id="@+id/language"
-        android:title="Language"
-        android:icon="@drawable/ic_baseline_language_24"
+        android:title="Categories"
+        android:icon="@drawable/ic_baseline_category_24"
         app:showAsAction="always"
         />
 

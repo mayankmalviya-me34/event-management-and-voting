@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/imageViewAcroN"
         android:layout_width="match_parent"
-        android:layout_height="615dp"
+        android:layout_height="wrap_content"
 
 
         android:layout_weight="1"
@@ -20,11 +20,11 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/startButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
 
 
+        android:layout_gravity="bottom"
         android:layout_margin="15dp"
-        android:layout_weight="1"
         android:background="#FFD80D"
         android:fontFamily="@font/arimo_bold"
         android:text="Get Started"
