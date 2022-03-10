@@ -9,7 +9,10 @@ import android.view.View;
 import com.example.minorproject.databinding.ActivityFacultyLoginBinding;
 
 public class FacultyLoginActivity extends AppCompatActivity {
-    ActivityFacultyLoginBinding binding;
+  ActivityFacultyLoginBinding binding;
+
+    FirebaseAuth auth;
+    FirebaseDatabase database;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,11 +20,38 @@ public class FacultyLoginActivity extends AppCompatActivity {
         binding = ActivityFacultyLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        auth = FirebaseAuth.getInstance();
+        database = FirebaseDatabase.getInstance();
+
+        ProgressDialog progressDialog = new ProgressDialog(FacultyLoginActivity.this);
+        progressDialog.setTitle("Longing in Account....");
+        progressDialog.setMessage("We are fetching your account details....");
+
         binding.backToRegister2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(FacultyLoginActivity.this,RegisterActivitySF.class);
                 startActivity(intent);
+            }
+        });
+
+        binding.fctLoginbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                progressDialog.show();
+                auth.signInWithEmailAndPassword(binding.fctEmaillogin.getText().toString(),binding.fctPasswordlogin.getText().toString()).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
+                            Intent intent = new Intent(FacultyLoginActivity.this, HomePageActivityForFaculty.class);
+                            startActivity(intent);
+                            progressDialog.dismiss();
+                        }
+                        else{
+                            Snackbar.make(v,"Please check your internet connection",Snackbar.LENGTH_LONG).show();
+                        }
+                    }
+                });
             }
         });
 
