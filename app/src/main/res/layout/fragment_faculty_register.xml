@@ -14,7 +14,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editTextTextPersonNameFac"
+            android:id="@+id/fctUserName"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_margin="7dp"
@@ -24,7 +24,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddressFac"
+            android:id="@+id/fctEmailId"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_margin="7dp"
@@ -34,7 +34,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editTextTextPasswordFac"
+            android:id="@+id/fctpassword"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_margin="7dp"
@@ -53,7 +53,7 @@
             android:textStyle="bold" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/FacultyRegister"
+            android:id="@+id/FacultyRegisterbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -83,7 +83,7 @@
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/LoginFaculty"
+                android:id="@+id/loginFaculty"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Login"
