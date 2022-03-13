@@ -6,4 +6,8 @@
     <string name="close_menu">close</string>
     <string name="channel_name">notify</string>
     <string name="channel_description">notify</string>
+    <string name="title_activity_home_page_for_faculty">HomePageActivityForFaculty</string>
+    <string name="title_home">Home</string>
+    <string name="title_LE">Live Event</string>
+    <string name="title_profile">Profile</string>
 </resources>

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.minorproject">
 
-
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +13,7 @@
         android:theme="@style/Theme.MinorProject">
         <activity
             android:name=".AfterSelectedCategories.AfterSelectedActitvity"
-            android:exported="false" >
+            android:exported="false">
 
         </activity>
 
@@ -21,10 +21,10 @@
             android:name=".loginandregister.OnTapNotoficationActivity"
             android:exported="false" />
         <activity
-            android:name=".HomePageFacultyAndStudent.HomePageActivityForFaculty"
+            android:name=".HomePageFacultyAndStudent.HomePageActivityForStudent"
             android:exported="false" />
         <activity
-            android:name=".HomePageFacultyAndStudent.HomePageActivityForStudent"
+            android:name=".HomePageFacultyAndStudent.HomePageActivityForFaculty"
             android:exported="false" />
         <activity
             android:name=".loginandregister.FacultyLoginActivity"

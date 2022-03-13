@@ -25,7 +25,7 @@ public class entertainmentFragment extends Fragment {
                              Bundle savedInstanceState) {
 
        View view =  inflater.inflate(R.layout.fragment_entertainment, container, false);
-       create = view.findViewById(R.id.CreateEvtButton);
+       //create = view.findViewById(R.id.CreateEvtButton);
        return  view;
     }
 }

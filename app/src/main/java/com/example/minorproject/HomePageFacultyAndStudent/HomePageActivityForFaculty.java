@@ -1,44 +1,40 @@
 package com.example.minorproject.HomePageFacultyAndStudent;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.os.Bundle;
-import android.view.View;
 
-import com.example.minorproject.CreateEventFragment;
 import com.example.minorproject.R;
 import com.example.minorproject.databinding.ActivityHomePageForFacultyBinding;
-import com.example.minorproject.loginandregister.FacultyRegister;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.ui.AppBarConfiguration;
+import androidx.navigation.ui.NavigationUI;
+
+
 
 public class HomePageActivityForFaculty extends AppCompatActivity {
-    ActivityHomePageForFacultyBinding binding;
+
+    private ActivityHomePageForFacultyBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         binding = ActivityHomePageForFacultyBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
 
-        binding.FacultyProfile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FacultyProfile fragment = new FacultyProfile();
-                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.LinearFac,fragment);
-                transaction.commit();
-            }
-        });
-        binding.CreatEvent.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                CreateEventFragment fragment = new CreateEventFragment();
-                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.LinearFac,fragment);
-                transaction.commit();
-            }
-        });
-
+        BottomNavigationView navView = findViewById(R.id.nav_view);
+        // Passing each menu ID as a set of Ids because each
+        // menu should be considered as top level destinations.
+        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
+                R.id.navigation_home, R.id.navigation_LE, R.id.navigation_profile)
+                .build();
+      NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_home_page_for_faculty);
+//        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+       NavigationUI.setupWithNavController(binding.navView, navController);
     }
+
 }
