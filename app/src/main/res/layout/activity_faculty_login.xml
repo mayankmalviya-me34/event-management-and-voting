@@ -73,7 +73,7 @@
                 />
 
             <EditText
-                android:id="@+id/editTextTextEmailAddressLoginFac"
+                android:id="@+id/fctEmaillogin"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_margin="7dp"
@@ -83,7 +83,7 @@
                 android:textSize="20dp" />
 
             <EditText
-                android:id="@+id/editTextTextPasswordLoginFac"
+                android:id="@+id/fctPasswordlogin"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_margin="7dp"
@@ -103,6 +103,7 @@
                 android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/fctLoginbtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
