@@ -12,7 +12,9 @@ import android.widget.Toast;
 import com.example.minorproject.R;
 
 public class FacultyProfile extends Fragment {
-
+ private Button facultylogout;
+    FirebaseAuth auth;
+    FirebaseDatabase database;
 
     public FacultyProfile() {
         // Required empty public constructor
@@ -24,6 +26,17 @@ public class FacultyProfile extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_faculty_profile, container, false);
         Toast.makeText(getContext(), "ready", Toast.LENGTH_SHORT).show();
+
+        facultylogout = view.findViewById(R.id.fctlogoutbtn);
+        facultylogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), "sign out", Toast.LENGTH_SHORT).show();
+                auth.signOut();
+                startActivity(new Intent(getContext(), StudentLoginActivity.class));
+
+            }
+        });
         return view;
     }
 }
