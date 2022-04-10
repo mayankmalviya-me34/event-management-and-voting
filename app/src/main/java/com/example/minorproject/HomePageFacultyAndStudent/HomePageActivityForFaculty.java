@@ -1,10 +1,14 @@
 package com.example.minorproject.HomePageFacultyAndStudent;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
+import com.example.minorproject.HomePageFacultyAndStudent.CreateEvent.CreateEventScrollingActivity;
 import com.example.minorproject.R;
 import com.example.minorproject.databinding.ActivityHomePageForFacultyBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -24,6 +28,14 @@ public class HomePageActivityForFaculty extends AppCompatActivity {
 
         binding = ActivityHomePageForFacultyBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        binding.floatingActionButtonCreateEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(HomePageActivityForFaculty.this, CreateEventScrollingActivity.class));
+            }
+        });
 
 
         BottomNavigationView navView = findViewById(R.id.nav_view);

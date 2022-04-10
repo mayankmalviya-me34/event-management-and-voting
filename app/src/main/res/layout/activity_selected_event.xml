@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="15dp"
+    tools:context=".AfterSelectedCategories.SelectedEventActivity"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/event_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/b" />
+
+        <TextView
+            android:id="@+id/event_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:text="TextView"
+            android:textColor="#E10000"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_view_back" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:text="Description"
+            android:textColor="@color/purple_500"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/event_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:paddingStart="8dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:text="Who can participate?"
+            android:textColor="@color/purple_500"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/event_who_can_participate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:paddingStart="8dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:text="Department"
+            android:textColor="@color/purple_500"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/event_depart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:paddingStart="8dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:text="Organizer"
+            android:textColor="@color/purple_500"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/event_org_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:paddingStart="8dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:text="Organizer Contact Number"
+            android:textColor="@color/purple_500"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/event_org_contact_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:paddingStart="8dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:text="Last date"
+            android:textColor="@color/purple_500"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/event_last_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:paddingStart="8dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:text="Address"
+            android:textColor="@color/purple_500"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/event_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:paddingStart="8dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:text="Date"
+            android:textColor="@color/purple_500"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/event_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:paddingStart="8dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:text="Time"
+            android:textColor="@color/purple_500"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/event_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/salsa"
+            android:paddingStart="8dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/purple_500"
+            android:text="Participate"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"></androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+</ScrollView>

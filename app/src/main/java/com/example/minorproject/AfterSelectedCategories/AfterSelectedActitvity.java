@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import com.example.minorproject.R;
@@ -33,16 +34,19 @@ public class AfterSelectedActitvity extends AppCompatActivity {
         CategoriesRecycleView categoriesRecycleView = new CategoriesRecycleView(arrayList,this);
 
 
-        database.getReference("CollegeEvent").child("Categories").addValueEventListener(new ValueEventListener() {
+
+        database.getReference("CollegeEvent").child("Categories").child(getIntent().getStringExtra("catg")).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 arrayList.clear();
                 for (DataSnapshot s : snapshot.getChildren()) {
 
-                    arrayList.add(new CategoriesEvent(s.child("evtTitle").getValue(String.class),s.child("evtDepartment").getValue(String.class),s.child("evtTime").getValue(String.class)));
+                    arrayList.add(new CategoriesEvent(s.child("evtPhoto").getValue(String.class),s.child("evtTitle").getValue(String.class),s.child("evtDescription").getValue(String.class), s.child("evtDepartment").getValue(String.class),s.child("evtOrganizerName").getValue(String.class),s.child("evtOrganizerNumber").getValue(String.class),s.child("evtAddress").getValue(String.class),s.child("evtDate").getValue(String.class),s.child("evtTime").getValue(String.class),s.child("currentDateTime").getValue(String.class),s.child("facultyID").getValue(String.class),s.child("lastDate").getValue(String.class), s.child("eligibility").getValue(String.class),s.child("isLive").getValue(String.class),s.child("evtCatg").getValue(String.class)));
                 }
                 categoriesRecycleView.notifyDataSetChanged();
                 binding.CategoryRecycle.setAdapter(categoriesRecycleView);
+                binding.progressbar.setVisibility(View.GONE);
+                binding.CategoryRecycle.setVisibility(View.VISIBLE);
 
             }
 
@@ -52,6 +56,7 @@ public class AfterSelectedActitvity extends AppCompatActivity {
 
             }
         });
+
 
 
 

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".HomePageFacultyAndStudent.CreateEvent.CreateEventScrollingActivity"
+    tools:showIn="@layout/activity_create_event_scrolling">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+        android:paddingBottom="10dp">
+
+        <EditText
+            android:id="@+id/editTextTextEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/get_input"
+            android:ems="10"
+            android:hint="Event Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/editTextTextDescription"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/get_input"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="Description"
+
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:padding="4dp"
+            android:singleLine="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/get_input"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:padding="3dp"
+                android:text="Department ?"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_CST"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Computer Science and technology" />
+
+                <RadioButton
+                    android:id="@+id/radio_IT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Information technology" />
+
+                <RadioButton
+                    android:id="@+id/radio_CS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Computer Science " />
+
+                <RadioButton
+                    android:id="@+id/radio_ME"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Mechanical Engineering" />
+
+                <RadioButton
+                    android:id="@+id/radio_CV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Civil Engineering" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/get_input"
+                android:gravity="center_vertical"
+                android:minHeight="45dp"
+                android:padding="3dp"
+                android:text="Category ?"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_Sports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:tag="sports"
+                    android:text="Sports" />
+
+                <RadioButton
+                    android:id="@+id/radio_CDC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:tag="cdc"
+                    android:text="CDC" />
+
+                <RadioButton
+                    android:id="@+id/radio_Club"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Club"
+                    android:tag="club"/>
+
+                <RadioButton
+                    android:id="@+id/radio_Entertainment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:tag="entertainment"
+                    android:text="Entertainment" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextEventOrganizerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/get_input"
+            android:ems="10"
+            android:hint="Organizer Name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/editTextEventOrganizerContactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/get_input"
+            android:ems="10"
+            android:hint="Organizer Contact Number"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/editTextTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/get_input"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/editTextTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/get_input"
+            android:ems="10"
+            android:hint="Date"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/editTextTextTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/get_input"
+            android:ems="10"
+            android:hint="Time"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="4dp" />
+        <EditText
+            android:id="@+id/editTextTextWhoCanParti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/get_input"
+            android:ems="10"
+            android:hint="Who can participate?"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="4dp" />
+        <EditText
+            android:id="@+id/editTextTextLastDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/get_input"
+            android:ems="10"
+            android:hint="Last Date"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="4dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/EventCreateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/purple_500"
+            android:text="Create"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

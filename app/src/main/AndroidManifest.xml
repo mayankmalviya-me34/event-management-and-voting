@@ -3,6 +3,9 @@
     package="com.example.minorproject">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
 
     <application
         android:allowBackup="true"
@@ -12,11 +15,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MinorProject">
         <activity
+            android:name=".FacultyEventRelated.EditAndUpdateEventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AfterSelectedCategories.SelectedEventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomePageFacultyAndStudent.CreateEvent.CreateEventScrollingActivity"
+            android:exported="false"
+            android:label="@string/title_activity_create_event_scrolling"
+            android:theme="@style/Theme.MinorProject.NoActionBar" />
+        <activity
             android:name=".AfterSelectedCategories.AfterSelectedActitvity"
-            android:exported="false">
-
-        </activity>
-
+            android:exported="false" />
         <activity
             android:name=".loginandregister.OnTapNotoficationActivity"
             android:exported="false" />
@@ -44,7 +55,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
         <meta-data
             android:name="preloaded_fonts"

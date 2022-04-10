@@ -14,18 +14,14 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 
-import com.example.minorproject.AfterSelectedCategories.CategoriesEvent;
-import com.example.minorproject.AfterSelectedCategories.CategoriesRecycleView;
-import com.example.minorproject.HomeFragment;
+import com.example.minorproject.HomeFragmentStudent;
 import com.example.minorproject.R;
-import com.example.minorproject.databinding.ActivityHomePageBinding;
 import com.example.minorproject.entertainmentFragment;
 import com.example.minorproject.langFragment;
 import com.example.minorproject.loginandregister.StudentLoginActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.FirebaseDatabase;
 
 
 public class HomePageActivityForStudent extends AppCompatActivity {
@@ -34,27 +30,19 @@ public class HomePageActivityForStudent extends AppCompatActivity {
     ActionBarDrawerToggle toggle;
     DrawerLayout drawerLayout;
     FirebaseAuth auth;
-    FirebaseDatabase database;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
+
+        auth = FirebaseAuth.getInstance();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNav);
         bottomNavigationView.setOnNavigationItemSelectedListener(navlistner);
-        //
-        auth = FirebaseAuth.getInstance();
-        //
-        database = FirebaseDatabase.getInstance();
-        //
-        CategoriesEvent categoriesEvent = new CategoriesEvent("Cricket","CSIT","12:30 PM to 5:00 PM");
-
-        database.getReference().child("CollegeEvent").child("Categories").child("sports").setValue(categoriesEvent);
-
-
         Toolbar toolbar =(Toolbar) findViewById(R.id.toolbartemp);
-      setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar);
         nav= findViewById(R.id.navmenu);
         drawerLayout  = (DrawerLayout)findViewById(R.id.drawer);
 
@@ -100,7 +88,7 @@ public class HomePageActivityForStudent extends AppCompatActivity {
                     switch ((item.getItemId()))
                     {
                         case R.id.Home:
-                            selectFragment = new HomeFragment();
+                            selectFragment = new HomeFragmentStudent();
                             break;
                         case R.id.language:
                             selectFragment = new langFragment();
