@@ -7,91 +7,327 @@
     tools:context=".HomePageFacultyAndStudent.ui.Profile.ProfileFragment">
 
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
             android:gravity="center|top"
             android:orientation="vertical">
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/profile_image"
-                android:layout_width="125dp"
-                android:layout_height="125dp"
-                android:src="@drawable/facdp"
-                android:layout_margin="5dp"
-                app:civ_border_color="#FF000000"
-                app:civ_border_width="2dp" />
 
-            <androidx.appcompat.widget.AppCompatImageButton
-                android:layout_width="50dp"
-                android:layout_height="42dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="-30dp"
-                android:background="@android:color/transparent"
-                android:scaleType="fitCenter"
-                android:src="@drawable/ic_baseline_camera_alt_24"
-                tools:ignore="SpeakableTextPresentCheck">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/profile_back"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            </androidx.appcompat.widget.AppCompatImageButton>
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/facdp"
+                    app:civ_border_width="2dp" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/fac_profile_set_pic"
+                    android:layout_width="35dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="-40dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_camera_alt_24"
+                    android:tint="#FFFFFF"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                </androidx.appcompat.widget.AppCompatImageButton>
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/fac_profile_name"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/arimo_bold"
                 android:gravity="center"
                 android:text="Faculty"
-                android:textSize="18sp" />
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fac_profile_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/merienda_one"
+                android:gravity="center"
+                android:text="faculty@gamil.com"
+                android:textColor="#D50000" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#74FFEC"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/trade_winds"
+                            android:gravity="center"
+                            android:text="15"
+                            android:textColor="#D50000"
+                            android:textSize="28sp" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/merienda_one"
+                            android:gravity="center"
+                            android:text="Event Created"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#DE9CFF"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/trade_winds"
+                            android:gravity="center"
+                            android:text="2 "
+                            android:textColor="#304FFE"
+                            android:textSize="28sp" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/merienda_one"
+                            android:gravity="center"
+                            android:text="Events are Live"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="faculty@gamil.com" />
-
-
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/merienda_one"
+                android:text="Personal Information"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
 
             <androidx.cardview.widget.CardView
-                android:layout_width="350dp"
-                android:layout_height="450dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_margin="15dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="5dp"
                 android:elevation="7dp"
-                app:cardCornerRadius="35dp">
+                app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/white"
-                    android:layout_margin="15dp"
                     android:gravity="center_horizontal"
-                    android:orientation="vertical" >
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Post"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Bio"
-                        />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="previous Events"
-                        />
+                    android:orientation="vertical">
 
-                    <Button
-                        android:id="@+id/fctlogoutbtn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/PDNameFac"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/get_info_back_profile"
+                        android:hint="Name"
+                        android:inputType="text"
+                        android:paddingLeft="5dp" />
 
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/PDDeptFac"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/get_info_back_profile"
+                        android:hint="Department"
+                        android:inputType="textMultiLine|text"
+                        android:paddingLeft="5dp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/PDFacultyOfFac"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/get_info_back_profile"
+                        android:hint="Faculty of  ****"
+                        android:inputType="text"
+                        android:paddingLeft="5dp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/PDNumberFac"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/get_info_back_profile"
+                        android:hint="Contact Number"
+                        android:inputType="number|text"
+                        android:paddingLeft="5dp"
+                        android:layout_marginTop="10dp" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/PDEmailFac"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="2dp"
+                        android:background="@drawable/get_info_back_profile"
+                        android:hint="Email"
+                        android:inputType="textWebEmailAddress|text"
+                        android:paddingLeft="5dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/PDUpdateFac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/purple_500"
                         android:padding="0dp"
-
-                        android:text="LOG OUT" />
+                        android:text="Update"
+                        android:textColor="@color/white" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/merienda_one"
+                android:text="More options"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rowCount="4"
+
+                android:columnCount="2">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:id="@+id/Gridlayout_login"
+
+                    android:layout_margin="10dp"
+                    android:background="#5381FF"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_logout_24"
+                    app:tint="#FFFFFF" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+
+                    android:layout_margin="10dp"
+                    android:background="#FF4848"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_event_24"
+                    app:tint="#FFFFFF" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+
+                    android:layout_margin="10dp"
+                    android:background="#FFE769"
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_settings_24"
+                    app:tint="#FFFFFF" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="10dp"
+                    android:background="#6FECFF"
+
+                    android:padding="3dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_chat_24"
+                    app:tint="#FFFFFF" />
+            </GridLayout>
+
         </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
