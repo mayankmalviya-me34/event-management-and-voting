@@ -205,8 +205,10 @@ public class ProfileFragment extends Fragment {
                yes.setOnClickListener(new View.OnClickListener() {
                    @Override
                    public void onClick(View v) {
+                       dialog.dismiss();
                        auth.signOut();
                        startActivity(new Intent(getActivity(),FacultyLoginActivity.class));
+
 
                    }
                });

@@ -81,6 +81,7 @@ public class CategoriesRecycleView extends RecyclerView.Adapter<CategoriesRecycl
             intent.putExtra("time",arrayList.get(pos).getEvtTime());
             intent.putExtra("org",arrayList.get(pos).getEvtOrganizerName());
             intent.putExtra("orgPh",arrayList.get(pos).getEvtOrganizerNumber());
+            intent.putExtra("eventID",arrayList.get(pos).getCurrentDateTime());
             context.startActivity(intent);
 
         }
