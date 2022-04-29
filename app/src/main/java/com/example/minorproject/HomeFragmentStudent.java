@@ -150,7 +150,7 @@ public class HomeFragmentStudent extends Fragment {
 
                     for (DataSnapshot s : snapshot.getChildren()) {
                         if(s.child("isLive").getValue(String.class).contains("1")){
-                            Toast.makeText(getContext(),"working",Toast.LENGTH_LONG).show();
+                            //Toast.makeText(getContext(),"working",Toast.LENGTH_LONG).show();
 
                             arrayList1.add(new CategoriesEvent(s.child("evtPhoto").getValue(String.class),s.child("evtTitle").getValue(String.class),s.child("evtDescription").getValue(String.class), s.child("evtDepartment").getValue(String.class),s.child("evtOrganizerName").getValue(String.class),s.child("evtOrganizerNumber").getValue(String.class),s.child("evtAddress").getValue(String.class),s.child("evtDate").getValue(String.class),s.child("evtTime").getValue(String.class),s.child("currentDateTime").getValue(String.class),s.child("facultyID").getValue(String.class),s.child("lastDate").getValue(String.class), s.child("eligibility").getValue(String.class),s.child("isLive").getValue(String.class),s.child("evtCatg").getValue(String.class)));
 
