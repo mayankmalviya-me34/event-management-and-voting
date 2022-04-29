@@ -214,10 +214,10 @@ public class entertainmentFragment extends Fragment {
 
                 emailtxt.setText(auth.getCurrentUser().getEmail());
 
-               database.getReference("StudentInfoDetails").addValueEventListener(new ValueEventListener() {
+               database.getReference("StudentInfoDetails").child(auth.getUid()).addValueEventListener(new ValueEventListener() {
                     @Override
-                    public void onDataChange(@NonNull DataSnapshot snap1) {
-                        for (DataSnapshot snap:snap1.getChildren()) {
+                    public void onDataChange(@NonNull DataSnapshot snap) {
+
                             nametxt.setText(snap.child("name").getValue(String.class));
                             depttxt.setText(snap.child("dept").getValue(String.class));
                             mobiletxt.setText(snap.child("mobile").getValue(String.class));
@@ -227,7 +227,7 @@ public class entertainmentFragment extends Fragment {
                             enrollmenttxt.setText(snap.child("enrollment").getValue(String.class));
                             gendertxt.setText(snap.child("gender").getValue(String.class));
                             //linkedIntxt.setText(snap.child("gender").getValue(String.class));
-                        }
+
 
 
 

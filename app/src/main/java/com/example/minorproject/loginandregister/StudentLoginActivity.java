@@ -34,7 +34,7 @@ public class StudentLoginActivity extends AppCompatActivity {
 
 
         ProgressDialog progressDialog = new ProgressDialog(StudentLoginActivity.this);
-        progressDialog.setTitle("Longing in Account....");
+        progressDialog.setTitle("Login in your Account....");
         progressDialog.setMessage("We are fetching your account details....");
 
         binding.backToRegister.setOnClickListener(new View.OnClickListener() {

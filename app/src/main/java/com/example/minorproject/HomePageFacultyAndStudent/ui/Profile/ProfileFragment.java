@@ -29,7 +29,7 @@ import com.example.minorproject.Models.FacultyModel;
 import com.example.minorproject.R;
 import com.example.minorproject.databinding.FragmentProfileBinding;
 import com.example.minorproject.loginandregister.FacultyLoginActivity;
-import com.github.dhaval2404.imagepicker.ImagePicker;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
@@ -101,10 +101,10 @@ public class ProfileFragment extends Fragment {
                 String name = snapshot.child("userID").getValue(String.class);
                 facName.setText(name);
                 //Faculty info fetching..
-                database.getReference("FacultyPersonalDetails").addValueEventListener(new ValueEventListener() {
+                database.getReference("FacultyPersonalDetails").child(auth.getUid()).addValueEventListener(new ValueEventListener() {
                     @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        for (DataSnapshot snap: snapshot.getChildren()) {
+                    public void onDataChange(@NonNull DataSnapshot snap) {
+
                             binding.PDEmailFac.setText(snap.child("newEmail").getValue(String.class));
                             binding.PDNameFac.setText(snap.child("newName").getValue(String.class));
                             binding.PDDeptFac.setText(snap.child("newDept").getValue(String.class));
@@ -112,7 +112,7 @@ public class ProfileFragment extends Fragment {
                             binding.PDFacultyOfFac.setText(snap.child("facultyOf").getValue(String.class));
                            // Toast.makeText(getActivity(), ""+snap.child("newEmail").getValue(String.class), Toast.LENGTH_SHORT).show();
 
-                        }
+
                     }
 
                     @Override

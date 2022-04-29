@@ -67,27 +67,43 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="7dp"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
                     android:layout_weight="1"
                     android:text="No. of participants"
                     android:textColor="#2962FF"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/eventNumParticipants"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
                     android:layout_weight="1"
                     android:gravity="end"
                     android:text="0"
                     android:textColor="#304FFE"
-                    android:textSize="14sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/viewParticipatedStud"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/purple_500"
+                    android:drawableRight="@android:drawable/arrow_down_float"
+                    android:paddingRight="7dp"
+                    android:text="View"
+                    android:textColor="#FFFFFF" />
+
 
             </LinearLayout>
 

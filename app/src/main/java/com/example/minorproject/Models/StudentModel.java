@@ -1,23 +1,24 @@
 package com.example.minorproject.Models;
 
 public class StudentModel {
-    String Name, Enroll, Email, Password, userID, profilePic;
+    String Name, Enroll, Email, Password, userID, profilePic ,participateTime,eventID;
 
-    public StudentModel(String name, String enroll, String email, String password, String userID, String profilePic) {
+
+
+    public StudentModel(String name, String enroll, String userID, String participateTime, String eventID) {
         Name = name;
         Enroll = enroll;
-        Email = email;
-        Password = password;
         this.userID = userID;
-        this.profilePic = profilePic;
+        this.participateTime = participateTime;
+        this.eventID = eventID;
     }
 
-    public StudentModel(String name, String enroll, String email, String password, String userID) {
-        Name = name;
-        Enroll = enroll;
-        Email = email;
-        Password = password;
-        this.userID = userID;
+    public String getParticipateTime() {
+        return participateTime;
+    }
+
+    public void setParticipateTime(String participateTime) {
+        this.participateTime = participateTime;
     }
 
     public String getName() {
@@ -66,5 +67,13 @@ public class StudentModel {
 
     public void setProfilePic(String profilePic) {
         this.profilePic = profilePic;
+    }
+
+    public String getEventID() {
+        return eventID;
+    }
+
+    public void setEventID(String eventID) {
+        this.eventID = eventID;
     }
 }

@@ -8,6 +8,8 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/drawable/button_back_blue.xml" value="0.261025641025641" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/drawable/get_info_back_profile.xml" value="0.191" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/drawable/get_input.xml" value="0.189" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/drawable/heading_back.xml" value="0.194" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/drawable/heading_back2.xml" value="0.194" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/drawable/ic_settings.xml" value="0.1925" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/drawable/list_color.xml" value="0.1225" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/drawable/one_color.xml" value="0.1225" />
@@ -27,6 +29,7 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/activity_home_page_for_faculty.xml" value="0.24139492753623187" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/activity_on_tap_notofication.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/activity_participated_student_details_and_list.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/activity_register_sf.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/activity_selected_event.xml" value="0.264" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/activity_student_login.xml" value="0.24895833333333334" />
@@ -45,8 +48,12 @@
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/fragment_student_register.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/live_event_recycle_view_layout.xml" value="0.2453125" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/menu_faculty_layout.xml" value="0.264" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/menu_student_layout.xml" value="0.144" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/my_custom_dialog_box.xml" value="0.1801470588235294" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/navheader.xml" value="0.23278985507246377" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/news_layout.xml" value="0.12447916666666667" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/partiipation_done_dialog_box.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/stud_participation_list_rv.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/student_info_form.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/layout/toolbar.xml" value="0.23278985507246377" />
         <entry key="..\:/Users/DELL/AndroidStudioProjects/MinorProject/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2453125" />

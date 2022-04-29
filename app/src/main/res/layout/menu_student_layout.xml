@@ -117,7 +117,7 @@
                 android:layout_height="60dp"
                 android:padding="8dp"
                 app:tint="@color/purple_500"
-                app:srcCompat="@drawable/ic_notifications" />
+                app:srcCompat="@drawable/notifications_icon" />
 
             <TextView
                 android:id="@+id/menu_notifications"

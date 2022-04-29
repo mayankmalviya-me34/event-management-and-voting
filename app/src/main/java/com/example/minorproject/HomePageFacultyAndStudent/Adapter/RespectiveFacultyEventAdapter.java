@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.minorproject.AfterSelectedCategories.CategoriesEvent;
 import com.example.minorproject.FacultyEventRelated.EditAndUpdateEventActivity;
+import com.example.minorproject.ParticipatedStudent.ParticipatedStudentDetailsAndList;
 import com.example.minorproject.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -71,6 +72,32 @@ public class RespectiveFacultyEventAdapter extends RecyclerView.Adapter<Respecti
         evtDT_ID = arrayList.get(position).getCurrentDateTime();
         evt_isLive = arrayList.get(position).getIsLive();
         facID = arrayList.get(position).getFacultyID();
+
+        holder.view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent  = new Intent(context, ParticipatedStudentDetailsAndList.class);
+                intent.putExtra("evtID",evtDT_ID);
+                context.startActivity(intent);
+            }
+        });
+
+        database.getReference("ParticipatedStudentList").child(evtDT_ID).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                long count = 0;
+                for (DataSnapshot snap: snapshot.getChildren()) {
+
+                     count ++;
+                }
+                holder.noOfP.setText(""+count);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 
         if(evt_isLive.contains("1")){
             try{
@@ -241,12 +268,15 @@ public class RespectiveFacultyEventAdapter extends RecyclerView.Adapter<Respecti
         ImageView evtPhoto;
         TextView evtName, noOfP;
         Button delete, live;
+        Button view;
         public FacViewHolder(@NonNull View itemView) {
             super(itemView);
             evtPhoto = itemView.findViewById(R.id.imageViewEventTea);
             evtName = itemView.findViewById(R.id.eventTitleTea);
             delete = itemView.findViewById(R.id.editBtn);
             live = itemView.findViewById(R.id.LiveBtn);
+            noOfP = itemView.findViewById(R.id.eventNumParticipants);
+            view = itemView.findViewById(R.id.viewParticipatedStud);
             itemView.setOnClickListener(this::onClick);
         }
 
